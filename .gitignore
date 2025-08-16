@@ -1,0 +1,26 @@
+node_modules
+.next
+dist
+out
+coverage.env*
+.DS_Storenpm-debug.log*
+yarn-error.log*
+*.swp
+EOFgit add .gitignore
+git commit -m "chore: add .gitignore"git push --force --all
+cat > .gitignore <<'EOF'
+# dependencies / build
+node_modules/
+.next/
+dist/
+out/
+coverage/
+
+# env / mac
+.env*
+.DS_Store
+
+# logs / misc
+npm-debug.log*
+yarn-error.log*
+*.swp
